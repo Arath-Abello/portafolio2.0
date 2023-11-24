@@ -1,0 +1,55 @@
+.load{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+  @media (max-width: 576px) {
+      word-wrap: break-word;
+      width: auto;
+  }
+}
+
+.term {
+  font-family: monospace;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: .625em;
+  padding-left: 1.25em;
+  display: inline-block; /* Esto es necesario para que el span funcione como se espera */
+  width: 500px;
+  @media (max-width: 576px) {
+    font-size: .75rem;
+    color: red;
+  }
+}
+
+.term:after {
+  content: "_";
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

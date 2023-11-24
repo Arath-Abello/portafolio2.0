@@ -1,0 +1,50 @@
+.navegation-homeList{
+    list-style: none;
+    padding-left: .3em;
+    margin-top: 0;
+    &__link{
+        display: block;
+        color: white;
+        width: 100%;
+        text-decoration: none; 
+        &:hover{
+            background-color: white;
+            color: black;
+        }  
+    }
+}
+.sectionC__command{
+    display: flex;
+    gap: .5em;
+    padding-left: .3em;
+    margin: .3em 0;
+}
+.green{
+    color: #05C793;
+    &::selection{
+        color: black;
+        background-color: #05C793;
+    }
+}
+.purple{
+    color: #7F50B9;
+    &::selection{
+        background-color: #7F50B9;
+        color: black;
+    }
+}
+.yellow{
+    color: #F2CD60;
+    &::selection{
+        background-color: #F2CD60;
+        color: black;
+    }
+}
+.white{
+    width: 50px;
+    color: white;
+    &::selection{
+        background-color: white;
+        color: black;
+    }
+}

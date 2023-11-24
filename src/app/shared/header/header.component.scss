@@ -1,0 +1,14 @@
+.section{
+    background-color: white;
+    &__header{
+        display: flex;
+        align-items: center;
+        padding-right: .3em;
+        &-title{
+            margin: 0;
+        }
+    }
+    div{
+        margin-left: auto;
+    }
+}
