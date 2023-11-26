@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './loader.component.scss'
 })
 export class LoaderComponent {
-
+  // variable para llamarlos al html
   prompt: string = 'arathadmin@arath:~$ ';
   output: string[] = [`sh script.sh && apt-get update
   CPU0 microcode updated early 
@@ -20,10 +20,14 @@ export class LoaderComponent {
     subsys cpu
     Initializing cgroup 
     subsys cpuacct
-    Command line: BOOT_IMAGE=/vmlinuz-3.19.0-21-generic.efi.signed 
-    root=UUID=14ac372e-6980-4fe8-b247-fae92d54b0c5 ro quiet
-     splash acpi_enforce_resources=lax intel_pstate=enable
-      rcutree.rcu_idle_gp_delay=1 nouveau.runpm=0 vt.handoff=7
+    Command line: BOOT_IMAGE=/vmlinuz-3.19.0-21
+    -generic.efi.signed 
+    root=UUID=14ac372e-
+    6980-4fe8-b247-fae92d54b0c5 ro quiet
+     splash acpi_enforce
+     _resources=lax intel_pstate=enable
+      rcutree.rcu_idle_gp_
+      delay=1 nouveau.runpm=0 vt.handoff=7
     KERNEL supported cpus:
       Intel GenuineIntel
       AMD AuthenticAMD
@@ -32,15 +36,26 @@ export class LoaderComponent {
     virbr0: port 1(virbr0-nic) entered disabled state
     Initialising...`];
 
+
+    // variable definido en 0
     currentIndex: number = 0;
+    // variable sin nada
     currentText: string = '';
-    speed: number = 200;
+    // variable definido en 10
+    speed: number = 10;
+    // variable definido en block
     containerDisplay: string = 'block';
+
+    // musica de fondo
+    
   
+    // ciclo de vida del componente que se llama después de que Angular ha inicializado todas las propiedades del componente. En este caso, se llama al metodo 
     ngOnInit() {
       this.typeText();
+
     }
-  
+
+    // metodo
     typeText() {
       this.currentText = ''; // Reinicia el texto
       this.containerDisplay = 'block'; // Muestra el contenedor
@@ -49,11 +64,16 @@ export class LoaderComponent {
       this.animateText(0);
     }
   
+    // metodo con una variable local index para recibir solo datos de tipo numero
     animateText(index: number) {
+      // temporizador que ejecuta un metodo o un una pieza de codigo
       setTimeout(() => {
+        // a esta misma variable que esta vacia se le añade el indice y los caracteres del indice especificado
         this.currentText += this.output[this.currentIndex].charAt(index);
   
+        // si el indice es menor a la longitud desde el ultimo caracter del array(-1)
         if (index < this.output[this.currentIndex].length - 1) {
+          // entonces se pasa al próximo carácter en la cadena y continúa el proceso de animación letra por letra
           this.animateText(index + 1);
         } else {
           // Pasa al siguiente texto después de escribir el actual
@@ -64,10 +84,10 @@ export class LoaderComponent {
               this.typeText();
             }, this.speed);
           } else {
-            // Todos los textos han sido escritos, oculta el contenedor
+            //* Todos los textos han sido escritos, oculta el contenedor
             this.containerDisplay = 'none';
           }
-        }
+        } //aqui toma el valor de speed que simula el temporizador 
       }, this.speed);
     }
 }
