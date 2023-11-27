@@ -11,4 +11,16 @@ import {  NgOptimizedImage } from '@angular/common';
 export class HeaderComponent {
   imageLogo = '../../../assets/terminal.png';
   altLogo = 'Logo de la imagen';
+  toggle = false;
+
+  playAudio(audio: HTMLAudioElement){
+    if(this.toggle){
+      audio.pause();
+    }else{
+      audio.play();
+    }
+    this.toggle = !this.toggle;
+  }
+
+  
 }

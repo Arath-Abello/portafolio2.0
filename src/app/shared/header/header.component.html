@@ -5,9 +5,10 @@
         <h1 class="section__header-title">arathadmin&commat;arath:~</h1>
         
         <div>
-            <button class="section-header__button">Music On 
-                <audio src=""></audio>
-            </button>
+            <button class="section-header__button" (click)="playAudio(audioElement)">
+                {{ toggle ? 'Music Off' : 'Music On' }}
+              </button>
         </div>
     </header>
+    <audio class="audio" #audioElement autoplay loop muted src="../../../assets/audio.mp3"></audio>
 </section>

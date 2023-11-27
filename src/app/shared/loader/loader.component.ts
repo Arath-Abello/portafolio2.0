@@ -30,29 +30,24 @@ export class LoaderComponent {
       delay=1 nouveau.runpm=0 vt.handoff=7
     KERNEL supported cpus:
       Intel GenuineIntel
-      AMD AuthenticAMD
       Centaur CentaurHauls
     e820: BIOS-provided physical RAM map:
     virbr0: port 1(virbr0-nic) entered disabled state
     Initialising...`];
-
 
     // variable definido en 0
     currentIndex: number = 0;
     // variable sin nada
     currentText: string = '';
     // variable definido en 10
-    speed: number = 10;
+    speed: number = 5;
     // variable definido en block
     containerDisplay: string = 'block';
 
-    // musica de fondo
-    
-  
+
     // ciclo de vida del componente que se llama después de que Angular ha inicializado todas las propiedades del componente. En este caso, se llama al metodo 
     ngOnInit() {
       this.typeText();
-
     }
 
     // metodo
