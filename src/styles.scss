@@ -19,8 +19,12 @@ body{
     margin-right: auto;
     margin-left: auto;
     background-color: black;
-    @media (max-width: 576px){
-        width: auto;
+    position: relative;
+    @media (min-width: 915px ){
+        position: static;
+        body{
+            position: relative;
+        }
     }
 }
 

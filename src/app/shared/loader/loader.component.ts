@@ -32,7 +32,7 @@ export class LoaderComponent {
     // variable sin nada
     currentText: string = '';
     // variable definido en 10
-    speed: number = 0;
+    speed: number = 200;
     // variable definido en block
     containerDisplay: string = 'block';
 
