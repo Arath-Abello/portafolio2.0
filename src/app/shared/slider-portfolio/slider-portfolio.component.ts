@@ -17,21 +17,21 @@ export class SliderPortfolioComponent {
       img: '../../../assets/imgSlider1.webp',
       title: 'Ecommerce',
       description: 'sitio de ecommerce hecho en html, css, sass y javascript (solo frontend)',
-      linkPage: ''
+      linkPage: 'https://arath-abello.github.io/ecommerce/'
     },
     {
       id: 1,
       img: '../../../assets/imgSlider2.webp',
       title: 'Itsoft',
       description: 'sitio hecho con html, css, sass, javascript y bootstrap',
-      linkPage: ''
+      linkPage: 'https://arath-abello.github.io/template-practica-itsoft.io/'
     },
     {
       id: 3,
       img: '../../../assets/imgSlider3.webp',
       title: 'Smash',
       description: 'sitio hecho con con un tema vacio personalizado (underscores) en wordpress con html, css, jquery, boostrap y php',
-      linkPage: ''
+      linkPage: 'https://arabello.laboratoriodiseno.cl/smash/'
     }
   ]
     
