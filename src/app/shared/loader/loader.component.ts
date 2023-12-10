@@ -20,14 +20,6 @@ export class LoaderComponent {
     subsys cpu
     Initializing cgroup 
     subsys cpuacct
-    Command line: BOOT_IMAGE=/vmlinuz-3.19.0-21
-    -generic.efi.signed 
-    root=UUID=14ac372e-
-    6980-4fe8-b247-fae92d54b0c5 ro quiet
-     splash acpi_enforce
-     _resources=lax intel_pstate=enable
-      rcutree.rcu_idle_gp_
-      delay=1 nouveau.runpm=0 vt.handoff=7
     KERNEL supported cpus:
       Intel GenuineIntel
       Centaur CentaurHauls
@@ -40,7 +32,7 @@ export class LoaderComponent {
     // variable sin nada
     currentText: string = '';
     // variable definido en 10
-    speed: number = 5;
+    speed: number = 0;
     // variable definido en block
     containerDisplay: string = 'block';
 

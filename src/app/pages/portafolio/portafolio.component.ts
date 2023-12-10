@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavegationComponent } from '../../shared/navegation/navegation.component';
 import { HeaderComponent } from '../../shared/header/header.component';
+import { PortfolioSlider } from '../../portfolio-slider';
 
 @Component({
   selector: 'app-portafolio',
@@ -12,4 +13,5 @@ import { HeaderComponent } from '../../shared/header/header.component';
 })
 export class PortafolioComponent {
 
+ 
 }
