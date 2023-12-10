@@ -14,21 +14,24 @@ export class SliderPortfolioComponent {
   public slider: PortfolioSlider[] = [
     {
       id: 0,
-      img: 'hola',
-      title: 'hhola',
-      description: 'hola3'
+      img: '../../../assets/imgSlider1.webp',
+      title: 'Ecommerce',
+      description: 'sitio de ecommerce hecho en html, css, sass y javascript (solo frontend)',
+      linkPage: ''
     },
     {
       id: 1,
-      img: 'hola',
-      title: 'hhola',
-      description: 'hola3'
+      img: '../../../assets/imgSlider2.webp',
+      title: 'Itsoft',
+      description: 'sitio hecho con html, css, sass, javascript y bootstrap',
+      linkPage: ''
     },
     {
       id: 3,
-      img: 'hola',
-      title: 'hhola',
-      description: 'hola3'
+      img: '../../../assets/imgSlider3.webp',
+      title: 'Smash',
+      description: 'sitio hecho con con un tema vacio personalizado (underscores) en wordpress con html, css, jquery, boostrap y php',
+      linkPage: ''
     }
   ]
     

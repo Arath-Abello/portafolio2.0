@@ -1,13 +1,14 @@
 <!-- tu-componente.component.html -->
 <section class="carousel-container">
   <article *ngFor="let slide of slider; let i = index" [class.active]="i === activeSlideIndex" class="carousel-slide">
-    <img [src]="slide.img" alt="{{ slide.title }}">
+    <img class="portadaSlide" [src]="slide.img" alt="{{ slide.title }}">
     <div class="carousel-caption">
       <h3>{{ slide.title }}</h3>
       <p>{{ slide.description }}</p>
+      <a class="btnLink" [href]="slide.linkPage">Ver proyecto</a>
     </div>
   </article>
 
-  <button (click)="prevSlide()"><img src="../../../assets/circle-arrow-left-solid.svg" alt="icono de flecha apuntando a la izquierda para cambiar el slide"></button>
-  <button (click)="nextSlide()"><img src="../../../assets/circle-arrow-right-solid.svg" alt="icono de flecha apuntando a la derecha para cambiar el slide"></button>
+  <button class="prev" (click)="prevSlide()"><img src="../../../assets/circle-arrow-left-solid.svg" alt="icono de flecha apuntando a la izquierda para cambiar el slide"></button>
+  <button class="next" (click)="nextSlide()"><img src="../../../assets/circle-arrow-right-solid.svg" alt="icono de flecha apuntando a la derecha para cambiar el slide"></button>
 </section>

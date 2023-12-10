@@ -2,12 +2,10 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    overflow: hidden;
   }
   
   .carousel-slide {
     display: none;
-    position: absolute;
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -18,7 +16,43 @@
     opacity: 1;
   }
   
-  button {
-    margin-top: 10px;
+  .prev, .next {
+    @media (max-width: 576px){
+      top: 95px;
+    }
+    top: 220px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    & img{
+      width: 30px;
+    }
   }
-  
+  .prev{
+    left: 30px;
+  }
+  .next{
+    right: 30px;
+  }
+
+  .portadaSlide{
+    height: auto;
+    max-width: 100%;
+  }
+.carousel-caption{
+  background-color: black;
+  color: white;
+  padding: 1em 0;
+  & h3{
+    margin-top: 0;
+  }
+}
+
+.btnLink{
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 1rem;
+  border: 1px dashed white;
+  color: white;
+}
